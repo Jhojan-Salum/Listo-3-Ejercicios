@@ -15,6 +15,8 @@ public class FigurasGeo {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        MENU menu = new MENU();
+        menu.setVisible(true);
         
     }
     

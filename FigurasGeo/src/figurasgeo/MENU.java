@@ -26,21 +26,107 @@ public class MENU extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel1 = new javax.swing.JLabel();
+        btncirculo = new javax.swing.JButton();
+        btnrectangulo = new javax.swing.JButton();
+        btncuadrado = new javax.swing.JButton();
+        btntrirectangulo = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jLabel1.setText("MENU");
+
+        btncirculo.setText("Circulo");
+        btncirculo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btncirculoActionPerformed(evt);
+            }
+        });
+
+        btnrectangulo.setText("Rectangulo");
+        btnrectangulo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnrectanguloActionPerformed(evt);
+            }
+        });
+
+        btncuadrado.setText("Cuadrado");
+        btncuadrado.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btncuadradoActionPerformed(evt);
+            }
+        });
+
+        btntrirectangulo.setText("Triangulo Rectangulo");
+        btntrirectangulo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btntrirectanguloActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(34, 34, 34)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btncirculo, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btntrirectangulo)
+                    .addComponent(btncuadrado, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnrectangulo, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(33, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addGap(86, 86, 86))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(18, 18, 18)
+                .addComponent(jLabel1)
+                .addGap(18, 18, 18)
+                .addComponent(btncirculo)
+                .addGap(18, 18, 18)
+                .addComponent(btncuadrado)
+                .addGap(18, 18, 18)
+                .addComponent(btnrectangulo)
+                .addGap(18, 18, 18)
+                .addComponent(btntrirectangulo)
+                .addContainerGap(29, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btncirculoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncirculoActionPerformed
+        // TODO add your handling code here:
+        CirculoI circulo = new CirculoI();
+        circulo.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btncirculoActionPerformed
+
+    private void btnrectanguloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnrectanguloActionPerformed
+        // TODO add your handling code here:
+        RectanguloI rectangulo = new RectanguloI();
+        rectangulo.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnrectanguloActionPerformed
+
+    private void btncuadradoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncuadradoActionPerformed
+        // TODO add your handling code here:
+        CuadradoI cuadrado = new CuadradoI();
+        cuadrado.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btncuadradoActionPerformed
+
+    private void btntrirectanguloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btntrirectanguloActionPerformed
+        // TODO add your handling code here:
+        Triangulo_rectanguloI triangulo = new Triangulo_rectanguloI();
+        triangulo.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btntrirectanguloActionPerformed
 
     /**
      * @param args the command line arguments
@@ -78,5 +164,10 @@ public class MENU extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btncirculo;
+    private javax.swing.JButton btncuadrado;
+    private javax.swing.JButton btnrectangulo;
+    private javax.swing.JButton btntrirectangulo;
+    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
